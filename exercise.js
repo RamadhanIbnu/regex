@@ -7,6 +7,7 @@
 
 // Jika huruf pertama bukan huruf besar. Program akan menampilkan/console.log ‘Huruf pertama adalah huruf kecil’
 
+
 function Besar(a) {
   regexp = /^[A-Z]/;
   if (regexp.test(a)) {
@@ -17,7 +18,7 @@ function Besar(a) {
 }
 
 let input = prompt("masukan kata yang anda inginkan : ")
-Besar(input);
+// console.log(Besar(input));
 
 
 // Soal No.2
@@ -29,17 +30,17 @@ Besar(input);
 //     Hanya menerima digit karakter
 
 
-function validasi(a) {
+function validasi(b) {
   regexp = /^\d{10,12}$/;
-  if (regexp.test(a)) {
+  if (regexp.test(b)) {
     alert("format yang anda masukan benar");
   } else {
     alert("Maaf format yang anda masukan salah, minimum 10 digit dan maksimum 12 digit!");
   }
 }
 
-let input = prompt("masukan nomer anda : ")
-validasi(input);
+let num = parseInt(prompt("masukan nomer anda : "))
+// validasi(num);
 
 
 // Soal No.3
@@ -52,14 +53,14 @@ validasi(input);
 
 //     Status covid hari ini
 
-function searchWord(a) {
+function searchWord(c) {
     regexp = /^Bagaimana cara memulai usaha bisnis$|^Bootcamp Impact Byte$|^Status covid hari ini$/;
-    if(regexp.test(a)) {
+    if(regexp.test(c)) {
         alert("kata yang anda cari berhasil ditemukan");
     } else {
         alert("maaf kata yang anda cari tidak dapat ditemukan");
     }
 }
 
-let input = prompt("masukan kata : "); 
-searchWord(input);
+let word = prompt("masukan kata : "); 
+// searchWord(word);
