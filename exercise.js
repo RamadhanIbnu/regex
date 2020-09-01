@@ -10,12 +10,14 @@
 function Besar(a) {
   regexp = /^[A-Z]/;
   if (regexp.test(a)) {
-    console.log("Huruf pertama adalah huruf besar");
+    alert("Huruf pertama adalah huruf BESAR");
   } else {
-    console.log("Huruf pertama adalah huruf kecil");
+    alert("Huruf pertama adalah huruf KECIL");
   }
 }
-Besar("kmzway87aa");
+
+let input = prompt("masukan kata yang anda inginkan : ")
+Besar(input);
 
 
 // Soal No.2
@@ -30,13 +32,14 @@ Besar("kmzway87aa");
 function validasi(a) {
   regexp = /^\d{10,12}$/;
   if (regexp.test(a)) {
-    console.log("format yang anda masukan benar");
+    alert("format yang anda masukan benar");
   } else {
-    console.log("Maaf format yang anda masukan salah, minimum 10 digit dan maksimum 12 digit!");
+    alert("Maaf format yang anda masukan salah, minimum 10 digit dan maksimum 12 digit!");
   }
 }
 
-validasi(123244923847);
+let input = prompt("masukan nomer anda : ")
+validasi(input);
 
 
 // Soal No.3
@@ -52,10 +55,11 @@ validasi(123244923847);
 function searchWord(a) {
     regexp = /^Bagaimana cara memulai usaha bisnis$|^Bootcamp Impact Byte$|^Status covid hari ini$/;
     if(regexp.test(a)) {
-        console.log("kata yang anda cari berhasil ditemukan");
+        alert("kata yang anda cari berhasil ditemukan");
     } else {
-        console.log("maaf kata yang anda cari tidak dapat ditemukan");
+        alert("maaf kata yang anda cari tidak dapat ditemukan");
     }
 }
 
-searchWord("Bootcamp Impact Byte");
+let input = prompt("masukan kata : "); 
+searchWord(input);
